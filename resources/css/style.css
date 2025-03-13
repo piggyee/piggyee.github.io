@@ -84,7 +84,7 @@ header {
     background-color: rgb(34, 216, 216);
     margin: 15px auto;
 }
-p {
+p{
     font-size: 20px;
     line-height: 1.9;
 }
@@ -105,7 +105,7 @@ p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(../img/BL.webp);
     height: 465px;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 10% 50%;
     position: relative;
 }
 .boximg3{
@@ -116,13 +116,13 @@ p {
     position: relative;
 }
 
-.imageBoxesTitle{
-    position:absolute;
-    bottom: 40px;
-    padding: 24px;
-}
-
-.imageBoxesTitle{
-    font-size: 24px;
-    color: #fff;
+.imageBoxesTitle {
+    position: absolute;   /* 使文字容器脫離正常文檔流 */
+    bottom: 40px;         /* 固定在容器底部 40px */
+    left: 50%;            /* 水平中間 */
+    transform: translateX(-70%); /* 修正水平居中 */
+    padding: 8px;        /* 內邊距 */
+    width: 100%;          /* 可視需求，通常設定為 100% 讓內容置中 */
+    text-align: center;   /* 文字置中 */
+    color: white;         /* 文字顏色 */
 }
