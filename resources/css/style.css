@@ -1,0 +1,128 @@
+div,form,h1,h2,h3,h4,h5,h6,li,p,ul{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Noto Sans TC", sans-serif;
+    background: url('../img/p6.webp')
+    center center;
+}
+
+h1{
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 120%;
+    letter-spacing: 6px;
+}
+
+h2{
+    font-size: 200%;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+h1:after{
+    display: block;
+    background-color: rgb(34, 216, 216);
+    content: "";
+    height: 2px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    transform: translate(10%, 100%);
+}
+
+.btn:link{
+    margin-top: 20px;
+    font-weight: 100;
+    border-radius: 8px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: rgb(34, 216, 216);
+    color: #fff;
+}
+
+.btn-full:hover{
+    background-color: rgb(36, 188, 188);
+}
+
+/*--HEADER---*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(img/PD_background.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+/*--about-us--*/
+
+.about-us{
+    height: 35vh;
+}
+
+.title-row{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.title{
+    margin-top: 20px;
+}
+.dividerCenter {
+    height: 2px;
+    width: 100px;
+    background-color: rgb(34, 216, 216);
+    margin: 15px auto;
+}
+p {
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+/*--member--*/
+
+.member{
+    height: 465px;
+}
+.boximg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(../img/FL.webp);
+    height: 465px;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+.boximg2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(../img/BL.webp);
+    height: 465px;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+.boximg3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url(../img/SL.webp);
+    height: 465px; 
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.imageBoxesTitle{
+    position:absolute;
+    bottom: 40px;
+    padding: 24px;
+}
+
+.imageBoxesTitle{
+    font-size: 24px;
+    color: #fff;
+}
