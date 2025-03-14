@@ -294,5 +294,24 @@ p {
     box-sizing: border-box; /* 確保 padding / border 不會影響寬度計算 */
   }
   
+  /* Gallery 區塊：12 張圖片，一排四張 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 若需要留間距，可調整 */
+    padding: 20px 0;  /* 可根據需要調整上下內邊距 */
+  }
+  
+  .gallery .gallery-item {
+    flex: 0 0 calc(25% - 10px); /* 每個項目寬度約 25%，並扣除左右間距 */
+    margin-bottom: 20px;  /* 每行底下的間距 */
+    box-sizing: border-box;
+  }
+  
+  .gallery .gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;  /* 選擇性：若想要圖片有圓角效果 */
+  }
   
   
