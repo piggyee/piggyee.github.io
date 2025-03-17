@@ -294,24 +294,82 @@ p {
     box-sizing: border-box; /* 確保 padding / border 不會影響寬度計算 */
   }
   
-  /* Gallery 區塊：12 張圖片，一排四張 */
+/* Gallery 區塊：12 張圖片，一排四張，左右完全填滿 */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* 若需要留間距，可調整 */
-    padding: 20px 0;  /* 可根據需要調整上下內邊距 */
+    padding: 0;
+    margin: 0;
   }
   
-  .gallery .gallery-item {
-    flex: 0 0 calc(25% - 10px); /* 每個項目寬度約 25%，並扣除左右間距 */
-    margin-bottom: 20px;  /* 每行底下的間距 */
-    box-sizing: border-box;
-  }
-  
-  .gallery .gallery-item img {
+  /* 每個 col-3 內的 .gallery-item 固定為正方形 */
+  .gallery .col-3 .gallery-item {
+    position: relative;
     width: 100%;
-    display: block;
-    border-radius: 4px;  /* 選擇性：若想要圖片有圓角效果 */
+    padding-top: 100%;  /* 建立正方形容器 */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
+  
+  /* 若內容是 <img>，讓圖片絕對定位填滿容器 */
+  .gallery .col-3 .gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 裁切填滿容器 */
+    display: block;
+    z-index: 1;
+  }
+  
+  /* 加入統一的漸層覆蓋，適用於所有 .gallery-item */
+  .gallery .col-3 .gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery .col-3 .gallery-item:hover::after {
+    opacity: 0;
+  }
+
+ /* 讓左側兩張圖各佔一半高度 */
+ .advice-section .img-box {
+    overflow: hidden; /* 防止圖片過大溢出 */
+  }
+  
+  .advice-section .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 裁切以填滿容器 */
+    display: block;
+  }
+  
+  /* 頭像大小，依需求調整 */
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  /* 圓形頭像 */
+    object-fit: cover;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   

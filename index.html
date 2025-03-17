@@ -112,54 +112,145 @@
             </div>
           </section>
           <!-- gallery 區塊，插入在其他 section 之後 -->
-        <section class="gallery">
-            <div class="container">
-            <div class="row">
+          <section class="gallery">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
                 <!-- 第一列：4 張圖片 -->
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/1.webp">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/1.webp" alt="圖片1">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/2.webp" class="img-fluid" alt="圖片2">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/2.webp" alt="圖片2">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/3.webp" class="img-fluid" alt="圖片3">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/3.webp" alt="圖片3">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/4.webp" class="img-fluid" alt="圖片4">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/4.webp" alt="圖片4">
+                  </div>
                 </div>
                 
                 <!-- 第二列：4 張圖片 -->
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/5.webp" class="img-fluid" alt="圖片5">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/5.webp" alt="圖片5">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/6.webp" class="img-fluid" alt="圖片6">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/6.webp" alt="圖片6">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/7.webp" class="img-fluid" alt="圖片7">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/7.webp" alt="圖片7">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/8.webp" class="img-fluid" alt="圖片8">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/8.webp" alt="圖片8">
+                  </div>
                 </div>
                 
                 <!-- 第三列：4 張圖片 -->
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/9.webp" class="img-fluid" alt="圖片9">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/9.webp" alt="圖片9">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/10.webp" class="img-fluid" alt="圖片10">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/10.webp" alt="圖片10">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/11.webp" class="img-fluid" alt="圖片11">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/11.webp" alt="圖片11">
+                  </div>
                 </div>
-                <div class="col-md-3 col-6">
-                <img src="../piggyee.github.io/resources/img2/12.jpg" class="img-fluid" alt="圖片12">
+                <div class="col-3">
+                  <div class="gallery-item">
+                    <img src="resources/img2/12.jpg" alt="圖片12">
+                  </div>
                 </div>
+              </div>
             </div>
+          </section>   
+          <!-- 這段可以插在 12 張圖片 (gallery) 的下面 -->
+          <section class="advice-section container-fluid">
+            <div class="row">
+              <!-- 左側 5 欄：左右並排兩張圖片 -->
+              <div class="col-md-5 p-0 d-flex">
+                <!-- 左邊圖片 -->
+                <div class="img-box flex-fill">
+                  <img src="resources/img2/left1.jpg" alt="Left Image 1" class="img-fluid">
+                </div>
+                <!-- 右邊圖片 -->
+                <div class="img-box flex-fill">
+                  <img src="resources/img2/left2.jpg" alt="Left Image 2" class="img-fluid">
+                </div>
+              </div>
+              
+              <!-- 右側 7 欄：兩兩並排評語 -->
+              <div class="col-md-7 py-4 px-5">
+                <!-- 使用 Bootstrap row row-cols-2，讓評語兩兩並排 -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  
+                  <!-- 評語卡片 1 -->
+                  <div class="col">
+                    <div class="d-flex align-items-start">
+                      <!-- 頭像 -->
+                      <img src="resources/img2/Jimmy.webp" alt="頭像1" class="avatar me-3">
+                      <!-- 評語文字 -->
+                      <div>
+                        <h5 class="mb-1">吉米</h5>
+                        <p class="mb-0">「我真的會被你們氣死，一群小王八蛋。」</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 評語卡片 2 -->
+                  <div class="col">
+                    <div class="d-flex align-items-start">
+                      <img src="resources/img2/Paul.webp" alt="頭像2" class="avatar me-3">
+                      <div>
+                        <h5 class="mb-1">熊貓</h5>
+                        <p class="mb-0">「最愛這裡的長官，不加調味卻能品嘗到工作的甜味。」</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 評語卡片 3 -->
+                  <div class="col">
+                    <div class="d-flex align-items-start">
+                      <img src="resources/img2/Jerry.webp" alt="頭像3" class="avatar me-3">
+                      <div>
+                        <h5 class="mb-1">峰哥</h5>
+                        <p class="mb-0">「垃圾聯鈞，垃圾濱川，垃圾新鋼」</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- 評語卡片 4 -->
+                  <div class="col">
+                    <div class="d-flex align-items-start">
+                      <img src="resources/img2/Jane.webp" alt="頭像4" class="avatar me-3">
+                      <div>
+                        <h5 class="mb-1">雯姊</h5>
+                        <p class="mb-0">「漸漸地愛上這裡，成為這裡的一份子，資深的好員工。」</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-  
-                
+          </section>                
     </body>
 </html>
