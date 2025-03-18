@@ -183,6 +183,7 @@
               </div>
             </div>
           </section>   
+
           <!-- 這段可以插在 12 張圖片 (gallery) 的下面 -->
           <section class="advice-section container-fluid">
             <div class="row">
@@ -196,8 +197,7 @@
                 <div class="img-box flex-fill">
                   <img src="resources/img2/left2.jpg" alt="Left Image 2" class="img-fluid">
                 </div>
-              </div>
-              
+              </div>              
               <!-- 右側 7 欄：兩兩並排評語 -->
               <div class="col-md-7 py-4 px-5">
                 <!-- 使用 Bootstrap row row-cols-2，讓評語兩兩並排 -->
@@ -214,8 +214,7 @@
                         <p class="mb-0">「我真的會被你們氣死，一群小王八蛋。」</p>
                       </div>
                     </div>
-                  </div>
-                  
+                  </div>                  
                   <!-- 評語卡片 2 -->
                   <div class="col">
                     <div class="d-flex align-items-start">
@@ -226,7 +225,6 @@
                       </div>
                     </div>
                   </div>
-                  
                   <!-- 評語卡片 3 -->
                   <div class="col">
                     <div class="d-flex align-items-start">
@@ -237,7 +235,6 @@
                       </div>
                     </div>
                   </div>
-                  
                   <!-- 評語卡片 4 -->
                   <div class="col">
                     <div class="d-flex align-items-start">
@@ -251,6 +248,49 @@
                 </div>
               </div>
             </div>
-          </section>                
+          </section>    
+          <section class="map-section container-fluid p-0">
+            <div class="row no-gutters">
+              <!-- 左側：佔 8 欄，再分成兩個 6 欄 -->
+              <div class="col-md-8">
+                <div class="row no-gutters">
+                  <!-- 左側上方 -->
+                  <div class="col-md-6">
+                    <div class="left-map-box">
+                      <!-- 可放置圖片、文字或其他內容 -->
+                      <img src="resources/img2/map_left1.jpg" alt="左上圖片" class="img-fluid">
+                    </div>
+                  </div>
+                  <!-- 左側下方 -->
+                  <div class="col-md-6">
+                    <div class="left-map-box">
+                      <img src="resources/img2/map_left2.jpg" alt="左下圖片" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 右側：佔 4 欄，放 Google Map -->
+              <div class="col-md-4">
+                <div id="googleMap" style="width: 100%; height: 100%; min-height: 400px;"></div>
+              </div>
+            </div>
+          </section>  
+          <script>
+            function initMap() {
+              // 這裡設定預設中心點（例如台北101）
+              var location = { lat: 25.050085903260634, lng: 121.4608478681306 };
+              var map = new google.maps.Map(document.getElementById("googleMap"), {
+                zoom: 15,
+                center: location,
+              });
+              // 加上標記
+              var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+              });
+            }
+          </script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqrN0iVOJTfNbwLbOsNSo0XHmYeJ4rGfE&callback=initMap"></script>
+                              
     </body>
 </html>
