@@ -381,6 +381,30 @@ p {
     height: auto; /* 如果希望保持比例；若想裁切則用 object-fit: cover */
     display: block;
   }
+
+  @media (max-width: 767.98px) {
+    /* Gallery 區塊：原來用 col-3/col-md-3 的，手機時每行顯示一張圖片 */
+    .gallery .col-3,
+    .gallery .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    /* member 區塊：將左右分欄調整為全寬堆疊 */
+    .member .col-md-8,
+    .member .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    /* Map 區塊：左側和右側都變全寬，堆疊排列 */
+    .map-section .col-md-8,
+    .map-section .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
   
   
   
