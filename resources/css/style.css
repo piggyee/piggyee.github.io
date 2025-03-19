@@ -422,26 +422,7 @@ p {
   object-fit: cover;
 }
 
-/* === 響應式：螢幕 <768px 改直排 === */
-@media (max-width: 768px) {
-    .member .row.noPadding {
-      display: block;
-    }
-  
-    .member .col-md-4.noPadding {
-      flex: none;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .member .boximg,
-    .member .boximg2,
-    .member .boximg3 {
-      aspect-ratio: auto;
-      height: auto;
-      width: 100%;
-    }
-  }
+
   
 
   
