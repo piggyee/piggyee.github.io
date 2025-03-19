@@ -43,35 +43,38 @@
         <section class="member">
             <div class="container-fluid noPadding">
               <div class="row noPadding">
-                <!-- 左側：三個圖片區塊 -->
-                <div class="col-md-8 d-flex justify-content-between noPadding">
-                  <div class="col-12 col-md-4 noPadding">
-                    <div class="boximg">
-                      <div class="imageBoxesTitle">
-                        <span>樹懶</span>
-                        <div class="divider"></div>
+                <!-- 左側：三張圖片 (8欄) -->
+                <div class="col-12 col-md-8 noPadding">
+                  <div class="row noPadding">
+                    <div class="col-12 col-md-4 noPadding">
+                      <div class="boximg">
+                        <div class="imageBoxesTitle">
+                          <span>樹懶</span>
+                          <div class="divider"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 noPadding">
-                    <div class="boximg2">
-                      <div class="imageBoxesTitle">
-                        <span>猩猩</span>
-                        <div class="divider"></div>
+                    <div class="col-12 col-md-4 noPadding">
+                      <div class="boximg2">
+                        <div class="imageBoxesTitle">
+                          <span>猩猩</span>
+                          <div class="divider"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-4 noPadding">
-                    <div class="boximg3">
-                      <div class="imageBoxesTitle">
-                        <span>鴨子</span>
-                        <div class="divider"></div>
+                    <div class="col-12 col-md-4 noPadding">
+                      <div class="boximg3">
+                        <div class="imageBoxesTitle">
+                          <span>鴨子</span>
+                          <div class="divider"></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- 右側：其他夥伴區塊 -->
-                <div class="col-md-4 noPadding">
+          
+                <!-- 右側：其他夥伴 (4欄) -->
+                <div class="col-12 col-md-4 noPadding">
                   <div class="bgBlack">
                     <div class="partner-wrapper">
                       <h3>其他夥伴</h3>
@@ -82,15 +85,14 @@
                       </div>
                     </div>
                   </div>
-                </div>  
+                </div>
               </div>
             </div>
-          </section> 
+          </section>
+          
           <section class="my-section">
             <!-- 左邊圖片區塊 -->
-            <div class="left">
-              <!-- 你可以用背景圖片或直接用 <img>，這裡示範背景圖片用 CSS -->
-            </div>
+            <div class="left"></div>
           
             <!-- 右邊文字區塊 -->
             <div class="right">
@@ -100,8 +102,6 @@
                 這裡可以放一小段敘述，比如「日系空運新鮮蔬果搭配面包、咖啡與茶，
                 不添加任何調味，吃的到原味，營養豐富」等等。
               </p>
-          
-              <!-- 五個內容（示範用 <ul> / <li>，也可用 <p> 逐行列出） -->
               <ul class="menu-list">
                 <li><strong>熊貓</strong><br>長相可愛討喜，飽受歡迎</li>
                 <li><strong>狸貓</strong><br>當沖大師，輕鬆賺錢</li>
@@ -111,6 +111,7 @@
               </ul>
             </div>
           </section>
+          
           <!-- gallery 區塊，插入在其他 section 之後 -->
           <section class="gallery">
             <div class="container-fluid p-0">
@@ -187,58 +188,49 @@
           <!-- 這段可以插在 12 張圖片 (gallery) 的下面 -->
           <section class="advice-section container-fluid">
             <div class="row">
-              <!-- 左側 5 欄：左右並排兩張圖片 -->
-              <div class="col-md-5 p-0 d-flex">
-                <!-- 左邊圖片 -->
-                <div class="img-box flex-fill">
+              <!-- 左側：兩張圖片直排（col-12 + flex-column） -->
+              <div class="col-12 col-md-5 p-0 d-flex flex-column">
+                <div class="img-box">
                   <img src="resources/img2/left1.jpg" alt="Left Image 1" class="img-fluid">
                 </div>
-                <!-- 右邊圖片 -->
-                <div class="img-box flex-fill">
+                <div class="img-box">
                   <img src="resources/img2/left2.jpg" alt="Left Image 2" class="img-fluid">
                 </div>
-              </div>              
-              <!-- 右側 7 欄：兩兩並排評語 -->
-              <div class="col-md-7 py-4 px-5">
-                <!-- 使用 Bootstrap row row-cols-2，讓評語兩兩並排 -->
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                  
-                  <!-- 評語卡片 1 -->
+              </div>
+          
+              <!-- 右側：評語直排（col-12 + row-cols-1） -->
+              <div class="col-12 col-md-7 py-4 px-5">
+                <div class="row row-cols-1 g-4">
                   <div class="col">
                     <div class="d-flex align-items-start">
-                      <!-- 頭像 -->
-                      <img src="resources/img2/Jimmy.webp" alt="頭像1" class="avatar me-3">
-                      <!-- 評語文字 -->
+                      <img src="resources/img2/Jimmy.webp" class="avatar me-3">
                       <div>
                         <h5 class="mb-1">吉米</h5>
                         <p class="mb-0">「我真的會被你們氣死，一群小王八蛋。」</p>
                       </div>
                     </div>
-                  </div>                  
-                  <!-- 評語卡片 2 -->
+                  </div>
                   <div class="col">
                     <div class="d-flex align-items-start">
-                      <img src="resources/img2/Paul.webp" alt="頭像2" class="avatar me-3">
+                      <img src="resources/img2/Paul.webp" class="avatar me-3">
                       <div>
                         <h5 class="mb-1">熊貓</h5>
                         <p class="mb-0">「最愛這裡的長官，不加調味卻能品嘗到工作的甜味。」</p>
                       </div>
                     </div>
                   </div>
-                  <!-- 評語卡片 3 -->
                   <div class="col">
                     <div class="d-flex align-items-start">
-                      <img src="resources/img2/Jerry.webp" alt="頭像3" class="avatar me-3">
+                      <img src="resources/img2/Jerry.webp" class="avatar me-3">
                       <div>
                         <h5 class="mb-1">峰哥</h5>
                         <p class="mb-0">「垃圾聯鈞，垃圾濱川，垃圾新鋼」</p>
                       </div>
                     </div>
                   </div>
-                  <!-- 評語卡片 4 -->
                   <div class="col">
                     <div class="d-flex align-items-start">
-                      <img src="resources/img2/Jane.webp" alt="頭像4" class="avatar me-3">
+                      <img src="resources/img2/Jane.webp" class="avatar me-3">
                       <div>
                         <h5 class="mb-1">雯姊</h5>
                         <p class="mb-0">「漸漸地愛上這裡，成為這裡的一份子，資深的好員工。」</p>
@@ -248,7 +240,8 @@
                 </div>
               </div>
             </div>
-          </section>    
+          </section>
+          
           <section class="map-section container-fluid p-0">
             <div class="row no-gutters">
               <!-- 左側：佔 8 欄，再分成兩個 6 欄 -->

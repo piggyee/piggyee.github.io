@@ -94,7 +94,7 @@ p {
 
 /*--member--*/
 .member {
-    height: 465px;
+    min-height: 465px;
     width: 100vw;  /* 取瀏覽器寬度 */
     margin-left: calc(50% - 50vw); /* 把區塊拉到瀏覽器邊緣 */
 }
@@ -422,7 +422,100 @@ p {
   object-fit: cover;
 }
 
-
+/* === 響應式：螢幕 <768px 改直排 === */
+@media (max-width: 768px) {
+    /* === MEMBER 區塊：三張圖＋右側文字各佔一行 === */
+    .member .d-flex {
+      display: block;
+    }
+    .member .col-md-4,
+    .member .col-md-8 {
+      width: 100%;
+      max-width: 100%;
+      flex: none;
+    }
+  
+    /* === MY‑SECTION：左右改直排 === */
+    @media (max-width: 768px) {
+        /* === MEMBER 區塊 === */
+        .member .d-flex {
+          display: block;
+        }
+        .member .col-md-4,
+        .member .col-md-8 {
+          width: 100%;
+          flex: none;
+        }
+      
+        /* === MY‑SECTION === */
+        .my-section {
+          flex-direction: column;
+        }
+        .my-section .left {
+          width: 100%;
+          aspect-ratio: 1/1;
+          height: auto;
+        }
+        .my-section .right {
+          width: 100%;
+          padding: 24px 16px;
+          font-size: 18px;
+          line-height: 1.6;
+        }
+        .my-section .menu-list {
+          display: block;
+          padding-left: 0;
+        }
+        .my-section .menu-list li {
+          margin-bottom: 16px;
+        }
+      
+        /* === GALLERY === */
+        .gallery .col-3 {
+          width: 100%;
+        }
+      
+      /* === ADVICE‑SECTION (手機 <768px) 完整覆蓋 === */
+        .advice-section > .row {
+            display: block;
+        }
+        
+        .advice-section .col-12.col-md-5,
+        .advice-section .col-12.col-md-7 {
+            width: 100%;
+            max-width: 100%;
+            flex: none;
+        }
+        
+        .advice-section .col-12.col-md-5 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .advice-section .img-box {
+            width: 100%;
+            aspect-ratio: 1/1;
+            margin-bottom: 16px;
+        }
+        
+        .advice-section .col-12.col-md-7 {
+            padding-left: 24px; /* ← 調整這個值 */
+            padding-right: 16px;
+        }
+        
+        .advice-section .row.row-cols-1 {
+            display: block;
+        }
+        
+        .advice-section .row.row-cols-1 > .col {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+      }
+      
+      
+      
+  
   
 
   
