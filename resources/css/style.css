@@ -382,29 +382,68 @@ p {
     display: block;
   }
 
-  @media (max-width: 767.98px) {
-    /* Gallery 區塊：原來用 col-3/col-md-3 的，手機時每行顯示一張圖片 */
-    .gallery .col-3,
-    .gallery .col-md-3 {
-      flex: 0 0 100%;
+  /* === 讓 .my-section 左右依比例縮放 === */
+.my-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-section .left {
+  flex: 5;
+  aspect-ratio: 5/7;
+  background-size: cover;
+  background-position: center;
+}
+.my-section .right {
+  flex: 7;
+}
+
+/* === advice‑section：左右 5:7，且兩張圖片保持正方 === */
+.advice-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advice-section .col-md-5.d-flex {
+  flex: 5;
+}
+.advice-section .col-md-7 {
+  flex: 7;
+}
+.advice-section .img-box {
+  flex: 1;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.advice-section .img-box + .img-box {
+  margin-left: 0.5%;
+}
+.advice-section .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === 響應式：螢幕 <768px 改直排 === */
+@media (max-width: 768px) {
+    .member .row.noPadding {
+      display: block;
+    }
+  
+    .member .col-md-4.noPadding {
+      flex: none;
+      width: 100%;
       max-width: 100%;
     }
-    
-    /* member 區塊：將左右分欄調整為全寬堆疊 */
-    .member .col-md-8,
-    .member .col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    
-    /* Map 區塊：左側和右側都變全寬，堆疊排列 */
-    .map-section .col-md-8,
-    .map-section .col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
+  
+    .member .boximg,
+    .member .boximg2,
+    .member .boximg3 {
+      aspect-ratio: auto;
+      height: auto;
+      width: 100%;
     }
   }
   
+
   
   
   
