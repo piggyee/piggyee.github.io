@@ -446,7 +446,22 @@ p {
           width: 100%;
           flex: none;
         }
-      
+    /* === ABOUT‑US 手機版文字大小 & 內邊距 === */
+        .about-us .title-row h2 {
+            font-size: 32px;      /* 標題變小 */
+            line-height: 1.2;
+            padding: 0 16px;      /* 左右留白 */
+          }
+          .about-us .title-row .dividerCenter {
+            margin: 8px auto;     /* 分隔線往上靠 */
+          }
+          .about-us .title .col-md-6 p {
+            font-size: 16px;      /* 內文變小 */
+            line-height: 1.6;
+            padding: 0 16px;      /* 左右留白 */
+            margin-top: 12px;
+          }
+
         /* === MY‑SECTION === */
         .my-section {
           flex-direction: column;
