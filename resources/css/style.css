@@ -526,6 +526,20 @@ p {
             width: 100%;
             margin-bottom: 16px;
         }
+            .container-fluid, .row {
+        padding: 0;
+        margin: 0;
+      }
+      .row > [class*="col-"] {
+        padding: 0;
+      }
+      .container-fluid, .row {
+        padding: 0;
+        margin: 0;
+      }
+      .row > [class*="col-"] {
+        padding: 0;
+      }
       }
       
       /* === 超小手機 (<376px) === */
