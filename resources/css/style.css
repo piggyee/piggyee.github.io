@@ -528,4 +528,56 @@ p {
         }
       }
       
-     
+      /* === 超小手機 (<376px) === */
+@media (max-width: 400px) {
+    /* Header 標題＋按鈕 */
+    .text-box {
+      padding: 0 16px;
+    }
+    .text-box h1 {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    .text-box h2 {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-top: 4px;
+    }
+    .text-box .btn-full {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .about-us .title-row h2 {
+        font-size: 24px;      /* 手機超小螢幕適中大小 */
+        line-height: 1.2;
+        padding: 0 12px;      /* 左右留白 */
+        text-align: center;   /* 如需置中 */
+      }
+
+    /* Advice‑Section 右側評語 */
+    .advice-section .col-12.col-md-7 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .advice-section .row.row-cols-1 > .col {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .advice-section .avatar {
+      width: 36px;
+      height: 36px;
+    }
+    .advice-section h5 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .advice-section p {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-top: 4px;
+    }
+  }
+  
