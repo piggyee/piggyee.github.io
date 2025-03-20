@@ -543,7 +543,7 @@ p {
       }
       
       /* === 超小手機 (<376px) === */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     /* Header 標題＋按鈕 */
     .text-box {
       padding: 0 16px;
