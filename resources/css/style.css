@@ -571,14 +571,16 @@ p {
 
     /* Advice‑Section 右側評語 */
     .advice-section .col-12.col-md-7 {
-      padding-left: 12px;
-      padding-right: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
     }
     .advice-section .row.row-cols-1 > .col {
       display: flex;
       align-items: flex-start;
       gap: 8px;
-      margin-bottom: 12px;
+      margin-left: 0;
+      margin-right: 0
     }
     .advice-section .avatar {
       width: 36px;
